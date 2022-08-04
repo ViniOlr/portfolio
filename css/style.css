@@ -1,0 +1,251 @@
+/* Cores */
+
+:root {
+    --cor-principal: #151E3F;
+    --azul-claro: #2176FF;
+}
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: var(--cor-principal);
+}
+
+/* Classes auxiliares */
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 2%;
+    margin: 0 auto
+}
+h2.title {
+    position: relative;
+    text-align: center;
+    margin: 7px 0;
+    font-size: 2.3em;
+    color: white;
+    font-weight: normal;
+}
+
+h2.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 30px;
+    background-color: var(--azul-claro);
+    transition: 0.4s;
+}
+
+h2.title:hover::before {
+    width: 50px;
+}
+
+/* Começo de estilização do site */
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 9;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #ccc;
+}
+header .logo p {
+    font-family: 'Square Peg', cursive;
+    color: white;
+    font-size: 3.5em;
+}
+
+header .menuDesktop ul {
+    display: flex;
+    list-style: none;
+}
+header .menuDesktop ul li {
+    margin: 0 15px;
+}
+header .menuDesktop ul li a {
+    color: white;
+    text-decoration: none;
+}
+header .menuDesktop ul li a:hover{
+    text-decoration: underline;
+}
+header .menuDesktop ul li a.btnCV {
+    background-color: var(--azul-claro);
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+header .menuDesktop ul li a.btnCV:hover {
+    text-decoration: none;
+}
+
+header.sticky  {
+    background-color: #080b18ef;
+    z-index: 999;
+    transition: 0.3s;
+    padding: 13px 0;
+}
+header.sticky .logo p {
+    font-size: 3em;
+    transition: 0.3s;
+}
+header.sticky .logo p {
+    font-size: 3em;
+    transition: 0.3s;
+}
+header.sticky .menuDesktop ul li {
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+header.sticky > .container {
+    border-bottom: 0;
+}
+
+header .iconMobile {
+    position: absolute;
+    right: 5%;
+    z-index: 10;
+}
+header .iconMobile i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.menuMobile {
+    width: 100%;
+    padding: 13px 0;
+    background-color: var(--azul-claro);
+    position: relative;
+    top: 96px;
+    z-index: 5;
+    display: none;
+}
+.menuMobile nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuMobile nav ul li {
+    margin: 2px 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+.menuMobile nav ul li:hover {
+    background-color: #1956b8;
+}
+.menuMobile nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menuMobile nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section.home {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+section.home .text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.home .text p {
+    color: white;
+    font-size: 1.7em;
+}
+section.home .text p span {
+    color: var(--azul-claro);
+}
+section.home .text .icons ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+section.home .text .icons ul li {
+    margin: 20px 15px 0 15px;
+}
+section.home .text .icons ul li a {
+    color: black;
+    transition: 0.3s;
+}
+section.home .text .icons ul li a:hover {
+    color: var(--azul-claro);
+}
+section.home .text .icons ul li a i {
+    font-size: 27px;
+}
+
+div.seeMore {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    text-align: center;
+}
+.relative {
+    position: relative!important;
+}
+div.seeMore a {
+    color: white;
+    text-decoration: none;
+}
+div.seeMore a i {
+    font-size: 25px;
+}
+div.seeMore a p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.about {
+    width: 100%;
+    margin-top: 30px;
+}
+section.about > .container {
+    display: flex;
+}
+section.about .text {
+    color: rgb(187, 187, 187);
+    padding-top: 30px;
+}
+section.about .text .progress {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+section.about .text .progress progress {
+    width: 100%;
+    height: 23px;
+    accent-color: var(--azul-claro);
+    /* border: 1px solid black; */
+}
+section.about .text .progress > div {
+    display: flex;
+    justify-content: space-between;
+}
