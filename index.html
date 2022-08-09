@@ -228,13 +228,18 @@
         <h2 class="title">Contato</h2>
         <div class="container">
             <form action="">
-                <input type="text">
+                <input type="text" placeholder="Nome Completo">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Telefone" data-mask="(00) 00000-0000">
+                <textarea placeholder="Sua Mensagem"></textarea>
+                <input type="submit" value="Enviar">
             </form>
         </div>
     </section>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.mask.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
