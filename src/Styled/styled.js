@@ -27,7 +27,7 @@ export const H2Titulo = styled.h2`
 
         width: 3px;
         height: 100%;
-        background-color: #ed145b;
+        background-color: var(--rosa);
         position: absolute;
         left: 0;
     }
@@ -50,7 +50,7 @@ export const H2TituloLarge = styled.h2`
 
         width: 50%;
         height: 3px;
-        background-color: #ed145b;
+        background-color: var(--rosa);
         position: absolute;
         bottom: -10px;
         left: 50%;
@@ -184,7 +184,7 @@ export const InfosAdicionais = styled.section`
                     margin-bottom: 10px;
                 }
                 p.porcent {
-                    color: #ed145b;
+                    color: var(--rosa);
                     font-size: 0.8em;
                 }
             }
@@ -200,10 +200,18 @@ export const InfosAdicionais = styled.section`
                     top: 0;
                     height: 100%;
                     /* width: 50%; */
-                    background-color: #ed145b;
+                    background-color: var(--rosa);
                     border-radius: 10px;
                 } 
             }
+        }
+    }
+    .textResumo {
+        p::first-letter {
+            padding-left: 40px;
+        }
+        a {
+            color: var(--rosa);
         }
     }
 `;

@@ -10,6 +10,10 @@ body, html {
     height: 100%;
 }
 
+:root{
+    --rosa: #ed145b;
+}
+
 body {
     background: rgb(83, 83, 83);
     background: radial-gradient(circle, rgba(83, 83, 83, 1) 0%, rgba(58, 58, 58, 1) 35%, rgba(33, 33, 33, 1) 100%);
