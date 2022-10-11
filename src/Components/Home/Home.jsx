@@ -1,6 +1,6 @@
 import React from "react";
 import Formacoes from '../Formacoes/Formacoes'
-import { Main, DadosPessoais, InfosAdicionais } from "../../Styled/styled";
+import { Main, DadosPessoais, InfosAdicionais, Container, Box, H2Titulo, H2TituloLarge } from "../../Styled/styled";
 import FotoPerfil from '../../img/vinicius.jpg'
 import { IoIosSchool } from 'react-icons/io'
 import { MdWork } from 'react-icons/md'
@@ -11,9 +11,9 @@ import HabSingle from "../HabSingle/HabSingle";
 const Home = ()=> {
     return(
         <Main>
-            <div className="container">
+            <Container>
                 <DadosPessoais>
-                    <div className="box perfil">
+                    <Box className='perfil'>
                         <div className="img">
                             <img src={FotoPerfil} alt="Imagem de perfil" />
                         </div>
@@ -25,9 +25,9 @@ const Home = ()=> {
                             <a href="https://www.linkedin.com/in/viniolr/" target='_blank' rel="noreferrer"><BsLinkedin /></a>
                             <a href="https://instagram.com/vini.olr?igshid=YmMyMTA2M2Y=" target='_blank' rel="noreferrer"><BsInstagram /></a>
                         </div>
-                    </div>
-                    <div className="box formacao">
-                        <h2 className="titulo"><IoIosSchool /> Formação</h2>
+                    </Box>
+                    <Box className="formacao">
+                        <H2Titulo><IoIosSchool /> Formação</H2Titulo>
                         <div className="formacoesGroup">
                             <Formacoes
                                 titulo='Analise e Desenvolvimento de Sistemas'
@@ -40,9 +40,9 @@ const Home = ()=> {
                                 periodo='jan-2020 a dez-2021 (Concluído).'                            
                             />
                         </div>
-                    </div>
-                    <div className="box experiencias">
-                        <h2 className="titulo"><MdWork /> Experiências</h2>
+                    </Box>
+                    <Box className="experiencias">
+                        <H2Titulo><MdWork /> Experiências</H2Titulo>
                         <div className="experienciasGroup">
                             <Experiencias 
                                 titulo='Estágiario de TI'
@@ -59,19 +59,23 @@ const Home = ()=> {
                                 atividades='Atividades administrativas.'
                             />
                         </div>
-                    </div>
+                    </Box>
                 </DadosPessoais>
                 <InfosAdicionais>
-                    <div className="box">
-                        <h2 className="tituloLarge">Informações do GitHub</h2>
+                    <Box>
+                        <H2TituloLarge>Resumo</H2TituloLarge>
+                        <p>Olá, meu nome é Vinícius e estou cursando Análise e Desenvolvimento de Sistemas na FIAP, unidade da Vila Olímpia. Atualmente estou atuando como estagiário em TI, minhas atividades dentro da empresa estão relacionadas com processos de RPA utilizando a linguagem de programação Python e a BotCity e algumas atividades com PL/SQL com o Oracle Apex.</p>
+                    </Box>
+                    <Box>
+                        <H2TituloLarge>Informações do GitHub</H2TituloLarge>
                         <div className="imgsGitHub">
                             <img height="180em" width="100%" alt="Informações do GitHub - Vinicius de Oliveira's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ViniOlr&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
                             <img height="180em" width="100%" alt="Informações do GitHub - Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ViniOlr&layout=compact&langs_count=7&theme=dracula"/>
                             <span>* Atualizado em tempo real</span>
                         </div>
-                    </div>
-                    <div className="box">
-                        <h2 className="tituloLarge">Habilidades</h2>
+                    </Box>
+                    <Box>
+                        <H2TituloLarge>Habilidades</H2TituloLarge>
                         <div className="habilidades">
                             <HabSingle 
                                 titulo='HTML'
@@ -98,9 +102,9 @@ const Home = ()=> {
                                 porcent='50%'
                             />
                         </div>
-                    </div>
+                    </Box>
                 </InfosAdicionais>
-            </div>
+            </Container>
         </Main>
     )
 }

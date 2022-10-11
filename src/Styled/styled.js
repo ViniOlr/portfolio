@@ -1,8 +1,74 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+`;
+
+export const Box = styled.div`
+    background-color: #101010;
+    -webkit-box-shadow: 5px 5px 5px 2px #000000;
+    box-shadow: 5px 5px 5px 2px #000000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+`;
+
+export const H2Titulo = styled.h2`
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 1.2em;
+    ::before {
+        content: '';
+
+        width: 3px;
+        height: 100%;
+        background-color: #ed145b;
+        position: absolute;
+        left: 0;
+    }
+    svg {
+        font-size: 1.3em;
+        margin-right: 7px;
+    }
+`;
+
+export const H2TituloLarge = styled.h2`
+    margin-bottom: 40px;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    ::before {
+        content: '';
+
+        width: 50%;
+        height: 3px;
+        background-color: #ed145b;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+    }
+    :hover::before {
+        width: 75%;
+    }
+    svg {
+        font-size: 1.3em;
+        margin-right: 7px;
+    }
+`;
+
 export const Main = styled.main`
     padding: 30px 0;
-    .container {
+    > div {
         display:flex;
         justify-content: space-between;
     }
