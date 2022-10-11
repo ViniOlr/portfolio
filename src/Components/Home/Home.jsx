@@ -45,9 +45,9 @@ const Home = ()=> {
                         <h2 className="titulo"><MdWork /> Experiências</h2>
                         <div className="experienciasGroup">
                             <Experiencias 
-                                titulo='Estágiario de TI'
+                                titulo='Estagiário de TI'
                                 empresa='TSCTI - Soluções Fiscais'
-                                periodo='jun de 2022 - o momento · 4 meses'
+                                periodo='jun de 2022 - o momento · 5 meses'
                                 local='São Paulo, Brasil'
                                 atividades='Processos de RPA com Python, atividades com PL/SQL e Oracle Apex'
                             />
