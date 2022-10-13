@@ -267,3 +267,8 @@ export const PortfolioSingle = styled.div`
         color: #ccc;
     }
 `;
+
+export const ContentFooter = styled.footer`
+    text-align: center;
+    padding: 20px 0;
+`;
