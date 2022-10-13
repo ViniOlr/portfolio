@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormExpSingle } from '../../Styled/styled';
+import { FormExpSingle } from '../../../Styled/styled';
 
 
 const Experiencias = (props)=> {
