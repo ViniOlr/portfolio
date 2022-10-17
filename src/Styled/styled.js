@@ -233,8 +233,8 @@ export const InfosAdicionais = styled.section`
             cursor: pointer;
             transition: 0.3s;
             :hover{
-                background-color: grey;
-                color: #ccc;
+                padding: 10px 25px;
+                font-size: 1.2em;
             }
         }
     }
