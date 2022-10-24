@@ -65,8 +65,8 @@ const Home = ()=> {
                     <Box>
                         <H2TituloLarge>Resumo</H2TituloLarge>
                         <div className="textResumo">
-                            <p>Olá, meu nome é Vinícius e estou cursando Análise e Desenvolvimento de Sistemas na <a href="https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/" target='_blank'>FIAP</a>, unidade da Vila Olímpia. Atualmente estou atuando como estagiário em TI, minhas atividades dentro da empresa estão relacionadas com processos de RPA utilizando a linguagem de programação Python e a BotCity e algumas atividades com PL/SQL com o Oracle Apex.</p>
-                            <p>Se quiserem entrar em contato comigo para trabalhos como freelancer ou para novas oportunidades, estou aberto a novos desafios para a minha vida. Ou se quiser bater um papo sobre qualquer assunto fique a vontade. As formas de entrar em contato comigo estão a baixo da minha foto de perfil ou pelo e-mail: vinioliveiracontato03@gmail.com <a href="mailto:vinioliveiracontato03@gmail.com">teste</a></p>
+                            <p>Olá, meu nome é Vinícius e estou cursando Análise e Desenvolvimento de Sistemas na <a href="https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/" target='_blank'>FIAP</a>, unidade da Vila Olímpia. Atualmente estou atuando como estagiário em TI, minhas atividades dentro da empresa estão relacionadas com processos de RPA utilizando a linguagem de programação Python e o framework BotCity, e algumas atividades com PL/SQL e Oracle Apex.</p>
+                            <p>Se quiserem entrar em contato comigo para trabalhos como freelancer ou para novas oportunidades, estou aberto a novos desafios para a minha vida. Ou se quiser bater um papo sobre qualquer assunto fique a vontade. As formas de entrar em contato comigo estão a baixo da minha foto de perfil ou pelo e-mail:  <a href="mailto:vinioliveiracontato03@gmail.com">vinioliveiracontato03@gmail.com</a></p>
                         </div>
                     </Box>
                     <Box>
