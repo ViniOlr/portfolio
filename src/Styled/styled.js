@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 4% 0 3%;
 `;
 
 export const Box = styled.div`
@@ -21,6 +21,7 @@ export const H2Titulo = styled.h2`
     padding-left: 13px;
     margin-bottom: 20px;
     display: flex;
+    align-items: center;
     font-size: 1.2em;
     ::before {
         content: '';
@@ -68,6 +69,9 @@ export const H2TituloLarge = styled.h2`
 
 export const Main = styled.main`
     padding: 30px 0;
+`;
+
+export const ContentHome = styled.section `
     > div {
         display:flex;
         justify-content: space-between;
@@ -213,5 +217,58 @@ export const InfosAdicionais = styled.section`
         a {
             color: var(--rosa);
         }
+        button {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: var(--rosa);
+            color: black;
+            margin: 20px 0;
+            padding: 7px 20px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            :hover{
+                padding: 10px 25px;
+                font-size: 1.2em;
+            }
+        }
     }
+`;
+
+export const ContentPortfolio = styled.section`
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0;
+    }
+    a {
+        text-decoration: none;
+        span {
+            display: flex;
+            align-items: center;
+            svg {
+                font-size: 1.2em;
+                margin-right: 7px;
+            }
+        }        
+    }
+`;
+
+export const PortfolioSingle = styled.div`
+    img {
+        width: 100%;
+    }
+    p {
+        color: #ccc;
+    }
+`;
+
+export const ContentFooter = styled.footer`
+    text-align: center;
+    padding: 20px 0;
 `;
