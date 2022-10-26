@@ -7,7 +7,7 @@ import { MdWork } from 'react-icons/md'
 import { BsGithub, BsWhatsapp, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import Experiencias from "./Experiencias/Experiencias";
 import HabSingle from "./HabSingle/HabSingle";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Home = ()=> {
     return(
@@ -34,6 +34,7 @@ const Home = ()=> {
                                 titulo='Analise e Desenvolvimento de Sistemas'
                                 instituto='FIAP - Faculdade de Informática e Administração Paulista.'
                                 periodo='jan-2022 a dez-2023 (2º Semestre).'
+                                className='faculdade'
                             />
                             <Formacoes 
                                 titulo='Ensino Médio Técnico em Informática'
@@ -68,8 +69,8 @@ const Home = ()=> {
                         <div className="textResumo">
                             <p>Olá, meu nome é Vinícius e estou cursando Análise e Desenvolvimento de Sistemas na <a href="https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/" target='_blank' rel="noreferrer">FIAP</a>, unidade da Vila Olímpia. Atualmente estou atuando como estagiário em TI, minhas atividades dentro da empresa estão relacionadas com processos de RPA utilizando a linguagem de programação Python e a BotCity e algumas atividades com PL/SQL com o Oracle Apex.</p>
                             <p>Se quiserem entrar em contato comigo para trabalhos como freelancer ou para novas oportunidades, estou aberto a novos desafios para a minha vida. Ou se quiser bater um papo sobre qualquer assunto fique a vontade. As formas de entrar em contato comigo estão a baixo da minha foto de perfil ou pelo e-mail: <a href="mailto:vinioliveiracontato03@gmail.com">vinioliveiracontato03@gmail.com</a>.</p>
-                            <p>No botão abaixo você poderá acessar alguns projetos feitos por mim para poder demonstrar minhas habilidades técnicas.</p>                            
-                            <Link to='/portfolio'><button>PortFolio</button></Link>
+                            {/* <p>No botão abaixo você poderá acessar alguns projetos feitos por mim para poder demonstrar minhas habilidades técnicas.</p>                            
+                            <Link to='/portfolio'><button>PortFolio</button></Link> */}
                         </div>
                     </Box>
                     <Box>

@@ -75,6 +75,11 @@ export const ContentHome = styled.section `
     > div {
         display:flex;
         justify-content: space-between;
+        flex-direction: row;
+        @media screen and (max-width: 930px) {
+            flex-direction: column;
+            gap: 25px 0;
+        }
     }
 `;
 
@@ -86,15 +91,19 @@ export const DadosPessoais = styled.section`
     float: left;
     .perfil {
         width: 100;
-        img {
+        .img {
             width: 250px;
-            height: 250px;
-            border-radius: calc(250px / 2);
-            object-position: 0  30%;
-            object-fit: cover;
+            height: 250px;            
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: calc(250px / 2);
+                object-position: 0  30%;
+                object-fit: cover;
+            }
         }
         h1.nome {
         text-align: center;
@@ -117,7 +126,9 @@ export const DadosPessoais = styled.section`
             }
         }
     }
-    
+    @media screen and (max-width: 930px) {
+        width: 100%;
+    }
 `;
 
 export const FormExpSingle = styled.div`
@@ -135,6 +146,7 @@ export const FormExpSingle = styled.div`
     :last-of-type::before {
         display: none;
     }
+    
     h3.titulo {
         padding-left: 50px;
         position: relative;
@@ -237,6 +249,9 @@ export const InfosAdicionais = styled.section`
                 font-size: 1.2em;
             }
         }
+    }
+    @media screen and (max-width: 930px) {
+        width: 100%;
     }
 `;
 
