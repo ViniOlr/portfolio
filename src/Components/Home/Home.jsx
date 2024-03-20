@@ -5,9 +5,8 @@ import FotoPerfil from '../../img/vinicius.jpg'
 import { IoIosSchool } from 'react-icons/io'
 import { MdWork } from 'react-icons/md'
 import { BsGithub, BsWhatsapp, BsLinkedin, BsInstagram } from 'react-icons/bs'
+import { MdOutlineMailOutline } from "react-icons/md";
 import Experiencias from "./Experiencias/Experiencias";
-import HabSingle from "./HabSingle/HabSingle";
-// import { Link } from "react-router-dom";
 
 const Home = ()=> {
     return(
@@ -19,13 +18,14 @@ const Home = ()=> {
                             <img src={FotoPerfil} alt="Imagem de perfil" />
                         </div>
                         <h1 className="nome">Vinicius de Oliveira</h1>
-                        <h2 className="cargo">Analista e Desenvolvedor <br /> de Sistemas</h2>
+                        <h2 className="cargo">Analista de Sistemas</h2>
                         <div className="links">
                             <a href="https://github.com/ViniOlr" target='_blank' rel="noreferrer"><BsGithub /></a>
                             <a href="https://api.whatsapp.com/send?phone=5511966309946&text=Ol%C3%A1%20Vinicius%2C%20Vi%20seu%20portfolio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA." target='_blank' rel="noreferrer"><BsWhatsapp /></a>
                             <a href="https://www.linkedin.com/in/viniolr/" target='_blank' rel="noreferrer"><BsLinkedin /></a>
                             <a href="https://instagram.com/vini.olr?igshid=YmMyMTA2M2Y=" target='_blank' rel="noreferrer"><BsInstagram /></a>
                         </div>
+                        <p><a href="mailto:vinioliveiracontato03@gmail.com"><MdOutlineMailOutline /> </a>vinioliveiracontato03@gmail.com</p>
                     </Box>
                     <Box className="formacao">
                         <H2Titulo><IoIosSchool /> Formação</H2Titulo>
@@ -33,7 +33,7 @@ const Home = ()=> {
                             <Formacoes
                                 titulo='Analise e Desenvolvimento de Sistemas'
                                 instituto='FIAP - Faculdade de Informática e Administração Paulista.'
-                                periodo='jan-2022 a dez-2023 (2º Semestre).'
+                                periodo='jan-2022 a dez-2023 (Concluído).'
                                 className='faculdade'
                             />
                             <Formacoes 
@@ -47,9 +47,16 @@ const Home = ()=> {
                         <H2Titulo><MdWork /> Experiências</H2Titulo>
                         <div className="experienciasGroup">
                             <Experiencias 
+                                titulo='Analista de Sistemas'
+                                empresa='TSCTI - Soluções Fiscais'
+                                periodo='jan de 2024 - o momento'
+                                local='São Paulo, Brasil'
+                                atividades='Processos de RPA com Python, atividades com PL/SQL e Oracle Apex'
+                            />
+                            <Experiencias 
                                 titulo='Estagiário de TI'
                                 empresa='TSCTI - Soluções Fiscais'
-                                periodo='jun de 2022 - o momento · 5 meses'
+                                periodo='jun de 2022 - dez de 2023 · 1 ano e 7 meses'
                                 local='São Paulo, Brasil'
                                 atividades='Processos de RPA com Python, atividades com PL/SQL e Oracle Apex'
                             />
@@ -67,47 +74,7 @@ const Home = ()=> {
                     <Box>
                         <H2TituloLarge>Resumo</H2TituloLarge>
                         <div className="textResumo">
-                            <p>Olá, meu nome é Vinícius e estou cursando Análise e Desenvolvimento de Sistemas na <a href="https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/" target='_blank' rel="noreferrer">FIAP</a>, unidade da Vila Olímpia. Atualmente estou atuando como estagiário em TI, minhas atividades dentro da empresa estão relacionadas com processos de RPA utilizando a linguagem de programação Python e a BotCity e algumas atividades com PL/SQL com o Oracle Apex.</p>
-                            <p>Se quiserem entrar em contato comigo para trabalhos como freelancer ou para novas oportunidades, estou aberto a novos desafios para a minha vida. Ou se quiser bater um papo sobre qualquer assunto fique a vontade. As formas de entrar em contato comigo estão a baixo da minha foto de perfil ou pelo e-mail: <a href="mailto:vinioliveiracontato03@gmail.com">vinioliveiracontato03@gmail.com</a>.</p>
-                            {/* <p>No botão abaixo você poderá acessar alguns projetos feitos por mim para poder demonstrar minhas habilidades técnicas.</p>                            
-                            <Link to='/portfolio'><button>PortFolio</button></Link> */}
-                        </div>
-                    </Box>
-                    <Box>
-                        <H2TituloLarge>Informações do GitHub</H2TituloLarge>
-                        <div className="imgsGitHub">
-                            <img height="180em" width="100%" alt="Informações do GitHub - Vinicius de Oliveira's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ViniOlr&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-                            <img height="180em" width="100%" alt="Informações do GitHub - Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ViniOlr&layout=compact&langs_count=7&theme=dracula"/>
-                            <span>* Atualizado em tempo real</span>
-                        </div>
-                    </Box>
-                    <Box>
-                        <H2TituloLarge>Habilidades</H2TituloLarge>
-                        <div className="habilidades">
-                            <HabSingle 
-                                titulo='HTML'
-                                porcent='100%'
-                            />
-                            <HabSingle 
-                                titulo='CSS'
-                                porcent='90%'
-                            />
-                            <HabSingle 
-                                titulo='JavaScript'
-                                porcent='70%'
-                            />
-                            <HabSingle 
-                                titulo='ReactJs'
-                                porcent='75%'
-                            />
-                            <HabSingle 
-                                titulo='Java'
-                                porcent='50%'
-                            />
-                            <HabSingle 
-                                titulo='Python'
-                                porcent='50%'
-                            />
+                            
                         </div>
                     </Box>
                 </InfosAdicionais>

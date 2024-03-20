@@ -125,6 +125,16 @@ export const DadosPessoais = styled.section`
                 font-size: 1.3em;
             }
         }
+        p  {
+            color: white;
+            display: flex;
+            justify-content: center;
+            svg {
+                font-size: 1.3em;
+                color: #ccc;
+                margin-right: 8px;
+            }
+        }
     }
     @media screen and (max-width: 930px) {
         width: 100%;
@@ -164,10 +174,7 @@ export const FormExpSingle = styled.div`
     }
     p {
         padding-left: 50px;
-        color: #808080;
-        b {
-            color: #ccc;
-        }
+        color: #ccc;
     }
 `;
 
