@@ -27,6 +27,10 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    .perfil .img {
+            width: 200px;
+            height: 200px;
+    }
 }
 
 body::-webkit-scrollbar {

@@ -262,6 +262,15 @@ export const InfosAdicionais = styled.section`
     }
 `;
 
+export const AreaConSingle =  styled.section`
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    p {
+        color: #ccc;
+    }
+`;
+
 export const ContentPortfolio = styled.section`
     > div {
         display: flex;

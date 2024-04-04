@@ -7,6 +7,7 @@ import { MdWork } from 'react-icons/md'
 import { BsGithub, BsWhatsapp, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { MdOutlineMailOutline } from "react-icons/md";
 import Experiencias from "./Experiencias/Experiencias";
+import AreasConhecimento from "./AreasConhecimento/AreasConhecimento";
 
 const Home = ()=> {
     return(
@@ -26,22 +27,6 @@ const Home = ()=> {
                             <a href="https://instagram.com/vini.olr?igshid=YmMyMTA2M2Y=" target='_blank' rel="noreferrer"><BsInstagram /></a>
                         </div>
                         <p><a href="mailto:vinioliveiracontato03@gmail.com"><MdOutlineMailOutline /> </a>vinioliveiracontato03@gmail.com</p>
-                    </Box>
-                    <Box className="formacao">
-                        <H2Titulo><IoIosSchool /> Formação</H2Titulo>
-                        <div className="formacoesGroup">
-                            <Formacoes
-                                titulo='Analise e Desenvolvimento de Sistemas'
-                                instituto='FIAP - Faculdade de Informática e Administração Paulista.'
-                                periodo='jan-2022 a dez-2023 (Concluído).'
-                                className='faculdade'
-                            />
-                            <Formacoes 
-                                titulo='Ensino Médio Técnico em Informática'
-                                instituto='UNASP - Centro Universitário Adventista de São Paulo'
-                                periodo='jan-2020 a dez-2021 (Concluído).'                            
-                            />
-                        </div>
                     </Box>
                     <Box className="experiencias">
                         <H2Titulo><MdWork /> Experiências</H2Titulo>
@@ -69,12 +54,53 @@ const Home = ()=> {
                             />
                         </div>
                     </Box>
+                    <Box className="formacao">
+                        <H2Titulo><IoIosSchool /> Formação</H2Titulo>
+                        <div className="formacoesGroup">
+                            <Formacoes
+                                titulo='Analise e Desenvolvimento de Sistemas'
+                                instituto='FIAP - Faculdade de Informática e Administração Paulista.'
+                                periodo='jan-2022 a dez-2023 (Concluído).'
+                                className='faculdade'
+                            />
+                            <Formacoes 
+                                titulo='Ensino Médio Técnico em Informática'
+                                instituto='UNASP - Centro Universitário Adventista de São Paulo'
+                                periodo='jan-2020 a dez-2021 (Concluído).'                            
+                            />
+                        </div>
+                    </Box>
                 </DadosPessoais>
                 <InfosAdicionais>
                     <Box>
                         <H2TituloLarge>Resumo</H2TituloLarge>
                         <div className="textResumo">
                             
+                        </div>
+                    </Box>
+                    <Box>
+                        <H2TituloLarge>Áreas de Conhecimento</H2TituloLarge>
+                        <div className="areas_group">
+                            <AreasConhecimento
+                                titulo='Front-End'
+                                descricao='Sou especializado em desenvolvimento Front-end, com proficiência em HTML, CSS e JavaScript, garantindo interfaces web intuitivas e responsivas. Além disso, tenho conhecimento em React, capacitando-me a criar componentes reutilizáveis. Também estou familiarizado com as bibliotecas Bootstrap e Materialize, otimizando o desenvolvimento e mantendo a consistência visual nos projetos.'
+                            />
+                            <AreasConhecimento
+                                titulo='Back-End'
+                                descricao='Possuo experiência sólida em desenvolvimento back-end, utilizando Python e o framework Flask para construir APIs robustas. Minha habilidade em Python me permite criar soluções eficientes e escaláveis, enquanto o uso do Flask simplifica o processo de desenvolvimento, permitindo-me criar APIs RESTful de forma rápida e eficaz. Estou familiarizado com conceitos como roteamento de URLs, manipulação de solicitações e respostas HTTP, autenticação e autorização de usuários, e integração de banco de dados, garantindo que minhas APIs atendam às necessidades dos clientes de forma eficiente e segura.'
+                            />
+                            <AreasConhecimento
+                                titulo='Banco de Dados'
+                                descricao='No ambiente de bancos de dados relacionais, demonstro habilidades avançadas em SQL, com experiência específica no SGBD Oracle. Meu conhecimento em Oracle abrange a criação e manipulação de estruturas de banco de dados, incluindo a implementação de triggers, sequences, procedures e functions utilizando PL/SQL. Estou apto a projetar e otimizar esquemas de banco de dados para garantir desempenho e integridade dos dados. Além disso, possuo experiência em bancos de dados NoSQL, permitindo-me trabalhar com modelos de dados flexíveis e escaláveis para atender a diversas necessidades de armazenamento e recuperação de dados.'
+                            />
+                            <AreasConhecimento
+                                titulo='RPA (Automação de Processos Robóticos)'
+                                descricao='Possuo conhecimento em Python para mapear, desenvolver e orquestrar automações para sistemas web e desktop. Além disso, tenho experiência na comunicação dos robôs com bancos de dados, facilitando a integração e manipulação de dados em processos automatizados.'
+                            />
+                            <AreasConhecimento
+                                titulo='Engenharia de Dados'
+                                descricao='Possuo experiência na construção de pipelines em Python, os quais são fundamentais para o processamento automatizado de dados. Estes pipelines permitem a extração, transformação e carga (ETL) de dados de diversas fontes, facilitando a análise e manipulação de informações. Utilizando bibliotecas como Pandas, NumPy e Scikit-learn, sou capaz de criar fluxos de trabalho eficientes e escaláveis para atender às demandas de processamento de dados em diversos domínios'
+                            />
                         </div>
                     </Box>
                 </InfosAdicionais>
