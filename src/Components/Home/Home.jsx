@@ -12,7 +12,7 @@ import AreasConhecimento from "./AreasConhecimento/AreasConhecimento";
 const Home = ()=> {
     return(
         <ContentHome>
-            <Container>
+            <Container>  
                 <DadosPessoais>
                     <Box className='perfil'>
                         <div className="img">
@@ -84,6 +84,7 @@ const Home = ()=> {
                             <AreasConhecimento
                                 titulo='Front-End'
                                 descricao='Sou especializado em desenvolvimento Front-end, com proficiência em HTML, CSS e JavaScript, garantindo interfaces web intuitivas e responsivas. Além disso, tenho conhecimento em React, capacitando-me a criar componentes reutilizáveis. Também estou familiarizado com as bibliotecas Bootstrap e Materialize, otimizando o desenvolvimento e mantendo a consistência visual nos projetos.'
+                                url='/cursos-front'
                             />
                             <AreasConhecimento
                                 titulo='Back-End'

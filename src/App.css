@@ -10,6 +10,29 @@
     height: 100%;
 } */
 
+h3 {
+    display: block;
+    font-size: 1.17em!important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.dYAHJJ {
+    margin-bottom: 0 !important;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+.fJepce {
+    margin-bottom: 0px !important;
+}
+
 :root{
     --rosa: #ed145b;
 }

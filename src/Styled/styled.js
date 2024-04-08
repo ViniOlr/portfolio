@@ -271,12 +271,12 @@ export const AreaConSingle =  styled.section`
     }
 `;
 
-export const ContentPortfolio = styled.section`
+export const ContentCursos = styled.section`
     > div {
         display: flex;
         flex-direction: column;
         gap: 40px 0;
-    }
+    }    
     a {
         text-decoration: none;
         span {
@@ -288,14 +288,32 @@ export const ContentPortfolio = styled.section`
             }
         }        
     }
-`;
+    div.cursos-group {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .curso_single {
+            width: 48%;
+            border: 1px solid white;
+            display: flex;
+            > div {
+                padding: 5px 10px;
+            }
+            img {
+                /* width: 100%; */
+            }
+        }
 
-export const PortfolioSingle = styled.div`
-    img {
-        width: 100%;
     }
-    p {
-        color: #ccc;
+    @media screen and (max-width: 850px) {
+        div.cursos-group {
+            flex-direction: column;
+            align-items: center;
+            .curso_single {
+                width: 75%;
+            }
+        }
     }
 `;
 
