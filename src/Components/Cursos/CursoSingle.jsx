@@ -3,10 +3,13 @@ import React from 'react';
 const Portfolio = (props) => {
     return (
         <div className="curso_single">
-            <img src={props.img} alt="" />
+            <div>
+                <img src={props.img} alt="" />
+            </div>
             <div>
                 <h3>{props.titulo}</h3>
-                <p>Data: {props.data}</p>
+                <p><b>Data:</b> {props.data}</p>
+                <p><b>Instituição:</b> {props.inst}</p>
             </div>
         </div>
     );

@@ -230,8 +230,9 @@ export const InfosAdicionais = styled.section`
         }
     }
     .textResumo {
-        p::first-letter {
-            padding-left: 40px;
+        p {
+            padding: 5px;
+            text-align: justify;
         }
         a {
             color: var(--rosa);
@@ -295,13 +296,16 @@ export const ContentCursos = styled.section`
         flex-wrap: wrap;
         .curso_single {
             width: 48%;
-            border: 1px solid white;
+            border-bottom:1px solid #ccc;
             display: flex;
             > div {
                 padding: 5px 10px;
             }
             img {
                 /* width: 100%; */
+            }
+            h3 {
+                margin-block-start: 0;
             }
         }
 

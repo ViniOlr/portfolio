@@ -75,7 +75,10 @@ const Home = ()=> {
                     <Box>
                         <H2TituloLarge>Resumo</H2TituloLarge>
                         <div className="textResumo">
-                            
+                            <p>Profissional proativo, dedicado, autodidata e facilidade em trabalhar em equipe. Formado em Análise e Desenvolvimento de Sistemas pela FIAP e mais de quatro anos de experiência no mundo da programação.</p>
+                            <p>Atualmente, atuo como analista de sistemas no mercado de TI, na área de soluções fiscais, onde desempenho um papel fundamental na implementação de soluções de automação de processos (RPA) utilizando Python. Além disso, tenho expertise na criação e manutenção de funcionalidades para APIs utilizando Flask, bem como experiência com banco de dados Oracle, PL/SQL e Apex.</p>
+                            <p>Minha jornada profissional tem sido marcada pelo constante interesse em explorar novas tecnologias e aprimorar minhas habilidades. Estou particularmente entusiasmado com a área de dados e estou ansioso para expandir meu conhecimento nesse campo.</p>
+                            <p>Em busca de desafios ainda mais estimulantes, estou planejando iniciar uma faculdade de Engenharia de Software no segundo semestre de 2024, consolidando ainda mais minha base de conhecimento e habilidades técnicas.</p>
                         </div>
                     </Box>
                     <Box>
@@ -89,18 +92,22 @@ const Home = ()=> {
                             <AreasConhecimento
                                 titulo='Back-End'
                                 descricao='Possuo experiência sólida em desenvolvimento back-end, utilizando Python e o framework Flask para construir APIs robustas. Minha habilidade em Python me permite criar soluções eficientes e escaláveis, enquanto o uso do Flask simplifica o processo de desenvolvimento, permitindo-me criar APIs RESTful de forma rápida e eficaz. Estou familiarizado com conceitos como roteamento de URLs, manipulação de solicitações e respostas HTTP, autenticação e autorização de usuários, e integração de banco de dados, garantindo que minhas APIs atendam às necessidades dos clientes de forma eficiente e segura.'
+                                url='/cursos-back'
                             />
                             <AreasConhecimento
                                 titulo='Banco de Dados'
                                 descricao='No ambiente de bancos de dados relacionais, demonstro habilidades avançadas em SQL, com experiência específica no SGBD Oracle. Meu conhecimento em Oracle abrange a criação e manipulação de estruturas de banco de dados, incluindo a implementação de triggers, sequences, procedures e functions utilizando PL/SQL. Estou apto a projetar e otimizar esquemas de banco de dados para garantir desempenho e integridade dos dados. Além disso, possuo experiência em bancos de dados NoSQL, permitindo-me trabalhar com modelos de dados flexíveis e escaláveis para atender a diversas necessidades de armazenamento e recuperação de dados.'
+                                url='/cursos-banco'
                             />
                             <AreasConhecimento
                                 titulo='RPA (Automação de Processos Robóticos)'
                                 descricao='Possuo conhecimento em Python para mapear, desenvolver e orquestrar automações para sistemas web e desktop. Além disso, tenho experiência na comunicação dos robôs com bancos de dados, facilitando a integração e manipulação de dados em processos automatizados.'
+                                url='/cursos-rpa'
                             />
                             <AreasConhecimento
                                 titulo='Engenharia de Dados'
                                 descricao='Possuo experiência na construção de pipelines em Python, os quais são fundamentais para o processamento automatizado de dados. Estes pipelines permitem a extração, transformação e carga (ETL) de dados de diversas fontes, facilitando a análise e manipulação de informações. Utilizando bibliotecas como Pandas, NumPy e Scikit-learn, sou capaz de criar fluxos de trabalho eficientes e escaláveis para atender às demandas de processamento de dados em diversos domínios'
+                                url='/cursos-dados'
                             />
                         </div>
                     </Box>
