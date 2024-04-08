@@ -24,7 +24,7 @@ const Home = ()=> {
                             <a href="https://github.com/ViniOlr" target='_blank' rel="noreferrer"><BsGithub /></a>
                             <a href="https://api.whatsapp.com/send?phone=5511966309946&text=Ol%C3%A1%20Vinicius%2C%20Vi%20seu%20portfolio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA." target='_blank' rel="noreferrer"><BsWhatsapp /></a>
                             <a href="https://www.linkedin.com/in/viniolr/" target='_blank' rel="noreferrer"><BsLinkedin /></a>
-                            <a href="https://instagram.com/vini.olr?igshid=YmMyMTA2M2Y=" target='_blank' rel="noreferrer"><BsInstagram /></a>
+                            <a href="https://www.instagram.com/vinioliveira.dev/" target='_blank' rel="noreferrer"><BsInstagram /></a>
                         </div>
                         <p><a href="mailto:vinioliveiracontato03@gmail.com"><MdOutlineMailOutline /> </a>vinioliveiracontato03@gmail.com</p>
                     </Box>
