@@ -58,7 +58,7 @@ const Home = ()=> {
                         <H2Titulo><IoIosSchool /> Formação</H2Titulo>
                         <div className="formacoesGroup">
                             <Formacoes
-                                titulo='Analise e Desenvolvimento de Sistemas'
+                                titulo='Análise e Desenvolvimento de Sistemas'
                                 instituto='FIAP - Faculdade de Informática e Administração Paulista.'
                                 periodo='jan-2022 a dez-2023 (Concluído).'
                                 className='faculdade'
@@ -75,7 +75,7 @@ const Home = ()=> {
                     <Box>
                         <H2TituloLarge>Resumo</H2TituloLarge>
                         <div className="textResumo">
-                            <p>Profissional proativo, dedicado, autodidata e facilidade em trabalhar em equipe. Formado em Análise e Desenvolvimento de Sistemas pela FIAP e mais de quatro anos de experiência no mundo da programação.</p>
+                            <p>Profissional proativo, dedicado, autodidata e com facilidade em trabalhar em equipe. Formado em Análise e Desenvolvimento de Sistemas pela FIAP e mais de quatro anos de experiência no mundo da programação.</p>
                             <p>Atualmente, atuo como analista de sistemas no mercado de TI, na área de soluções fiscais, onde desempenho um papel fundamental na implementação de soluções de automação de processos (RPA) utilizando Python. Além disso, tenho expertise na criação e manutenção de funcionalidades para APIs utilizando Flask, bem como experiência com banco de dados Oracle, PL/SQL e Apex.</p>
                             <p>Minha jornada profissional tem sido marcada pelo constante interesse em explorar novas tecnologias e aprimorar minhas habilidades. Estou particularmente entusiasmado com a área de dados e estou ansioso para expandir meu conhecimento nesse campo.</p>
                             <p>Em busca de desafios ainda mais estimulantes, estou planejando iniciar uma faculdade de Engenharia de Software no segundo semestre de 2024, consolidando ainda mais minha base de conhecimento e habilidades técnicas.</p>
